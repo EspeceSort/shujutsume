@@ -18,7 +18,7 @@ body {
     width: 100%;
     height: 100%;
 
-    color: #fff;
+    color: $lightColor;
 
     background: url(./../images/bg_header.png) center center / cover no-repeat;
 }
@@ -31,23 +31,70 @@ body {
     font-size: 1.3rem;
 }
 
+#profile {
+    padding: 30px 10px 30px 10px;
+    width: 100%;
+    color: $darkColor;
+}
+
+#profile-contents {
+    padding: 0 30px;
+    min-width: 40%;
+
+    h4 {
+        padding-bottom: .2em;
+        border-bottom: 1px solid $darkColor;
+
+        span {
+            display: block;
+            margin-bottom: .1em;
+            color: #666;
+            font-size: .4em;
+        }
+    }
+}
+
+#profile-detail {
+    div {
+        padding: 0 5px;
+
+        p {
+            border-bottom: 1px solid $darkColor;
+        }
+    }
+}
+
 #contents-link {
     padding: 30px 10px 30px 10px;
     width: 100%;
+    color: $lightColor;
 
-    background-color: #aaa;
+    background-color: $darkColor;
 
     a {
-        background-color: $hoverColor;
         margin: 10px 10px;
         text-align: center;
-        font-weight: bolder;
-        padding: 15px 30px;
-        min-width: 300px;
-        height: 280px;
         display: inline-block;
-        vertical-align: middle;
+        padding: 15px 0;
+        min-width: 100px;
+        font-weight: bolder;
+        text-decoration: none;
+        font-size: 1.6rem;
 
         flex-basis: 30%;
+    }
+}
+
+footer {
+    padding-top: 15px;
+    width: 100%;
+    height: 50px;
+    color: $lightColor;
+    text-align: center;
+    background-color: $darkColor;
+
+    p {
+        margin: 0;
+        font-weight: bolder;
     }
 }
